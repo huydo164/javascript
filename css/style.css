@@ -1,0 +1,87 @@
+body {
+    font-size: 15px;
+    background: #fff;
+    color: #000;
+    line-height: 1.42857143;
+    width: 100%;
+    overflow: hidden;
+}
+
+/*------- header -------*/
+#header{
+    background: #1e1e6b;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    padding: 20px 0;
+    margin-bottom: 15px;
+}
+
+/*------- content -------*/ 
+
+/*----search-----*/
+#search{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    
+}
+#search .form-search{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#search .form-group{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+#search .form-group:nth-child(2){
+    margin-bottom: 0;
+}
+#search .control-label{
+    flex-basis: 15%;
+}
+#search .form-control{
+    flex-basis: 45%;
+}
+
+/*-----detail-----*/
+#detail{
+    border: 1px solid #ccc;
+    padding: 25px 30px;
+    margin-bottom: 20px;
+}
+#detail .form-group{
+    margin-bottom: 2rem;
+}
+
+/*----table-result-----*/
+#table-result{
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+#table-result table{
+    width: 100%;
+}
+#show thead tr th{
+    padding: 15px 0;
+}
+.last-th{
+    width: 8%;
+}
+#show tbody tr{
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+
+/*----button----*/
+#button{
+    position: absolute;
+    bottom: 0;
+    left: 43%;
+}
+#button button{
+    margin-right: 20px;
+}
