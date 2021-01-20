@@ -4,84 +4,151 @@ body {
     color: #000;
     line-height: 1.42857143;
     width: 100%;
-    overflow: hidden;
 }
+
+img {
+    width: 100%;
+    object-fit: contain;
+}
+
 
 /*------- header -------*/
-#header{
-    background: #1e1e6b;
-    text-align: center;
-    font-weight: bold;
-    color: #fff;
-    padding: 20px 0;
-    margin-bottom: 15px;
+
+.img {
+    flex-basis: 4%;
 }
 
-/*------- content -------*/ 
+
+/*------- content -------*/
+
+#content {
+    margin-top: 20px;
+}
+
 
 /*----search-----*/
-#search{
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 15px 0;
+
+#search,
+#detail,
+#table-result {
+    border: 2px solid #ccc;
+    border-radius: 5px;
     margin-bottom: 20px;
-    
 }
-#search .form-search{
+
+#search h4,
+#detail h4,
+#table-result h4 {
+    padding: 10px 0 10px 20px;
+    border-bottom: 2px solid #ccc;
+    background: #f7f7f7;
+    font-size: 20px;
+}
+
+#search .form-search {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 20px 0;
 }
-#search .form-group{
+
+#search .form-group {
     display: flex;
     width: 100%;
     justify-content: center;
 }
-#search .form-group:nth-child(2){
+
+#search .form-group:nth-child(2) {
     margin-bottom: 0;
 }
-#search .control-label{
+
+#search .control-label {
     flex-basis: 15%;
 }
-#search .form-control{
+
+#search .form-control {
     flex-basis: 45%;
 }
 
+
 /*-----detail-----*/
-#detail{
-    border: 1px solid #ccc;
+
+#detail .row {
     padding: 25px 30px;
-    margin-bottom: 20px;
 }
-#detail .form-group{
+
+#detail .form-group {
     margin-bottom: 2rem;
 }
 
+
 /*----table-result-----*/
-#table-result{
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
+
+#table-result {
+    padding: 0 0 65px 0
 }
-#table-result table{
+
+#show_wrapper {
+    padding: 0 20px;
+}
+
+#table-result table {
     width: 100%;
 }
-#show thead tr th{
+
+#show thead tr th {
     padding: 15px 0;
 }
-.last-th{
+
+.last-th {
     width: 8%;
 }
-#show tbody tr{
+
+#show tbody tr {
     border-bottom: 1px solid #ccc;
     border-top: 1px solid #ccc;
 }
 
-/*----button----*/
-#button{
-    position: absolute;
-    bottom: 0;
-    left: 43%;
+#show tbody tr td {
+    padding: 10px 20px 10px 0;
 }
-#button button{
+
+#show tbody tr.selected {
+    background: #ccc;
+}
+
+
+/*----button----*/
+
+#button {
+    background: #030338;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#button button {
     margin-right: 20px;
+    border-radius: 5px;
+    flex-basis: 8%;
+    background: none;
+    color: #fff;
+    outline: 0;
+    outline-style: none;
+    outline-width: 0;
+}
+
+#button button:last-child {
+    margin-right: 0;
+}
+
+#button button p {
+    margin: 0;
+}
+
+#show_filter {
+    display: none;
 }
