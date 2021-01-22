@@ -22,14 +22,28 @@
     <div id="wrapper">
         <!---header--->
         <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
-            <img class="img" src="img/logo.png" alt="">
-            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Jquery Tutorial</a>
-            <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
-            <ul class="navbar-nav px-3">
-                <li class="nav-item text-nowrap">
-                    <a class="nav-link" href="#">Sign out</a>
-                </li>
-            </ul>
+            <div class="row fix-w">
+                <div class="row col-md-2 mr-3">
+                    <div class="col-lg-4">
+                        <img src="img/logo.png" alt="">
+                    </div>
+                    <div class="col-lg-8">
+                        <a class="navbar-brand pb-0 mr-0" href="#">Jquery Tutorial</a>
+                    </div>
+                </div>
+                <div class="row col-md-10 pr-0">
+                    <div class="col-md-11 pr-0">
+                        <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+                    </div>
+                    <div class="col-md-1">
+                        <ul class="navbar-nav px-3">
+                            <li class="nav-item text-nowrap">
+                                <a class="nav-link" href="#">Sign out</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </nav>
 
         <div class="container-fluid">
@@ -102,78 +116,108 @@
                 <div class="col-md-10">
                     <main id="content">
                         <!----search---->
-                        <section id="search">
-                            <h4>Search</h4>
-                            <form action="" method="get" class="form-search">
-                                <div class="form-group">
-                                    <span class="control-label">ID</span>
-                                    <input type="text" name="" class="form-control search-value" data-column-index='0'>
-                                </div>
-                                <div class="form-group">
-                                    <span class="control-label">Name</span>
-                                    <input type="text" name="" class="form-control search-value" data-column-index='1'>
-                                </div>
-                            </form>
+                        <section id="search" class="card">
+                            <h4 class="card-header">Search</h4>
+                            <div class="card-body">
+                                <form action="" method="get" class="form-search">
+                                    <div class="form-group">
+                                        <span class="control-label">ID</span>
+                                        <input type="text" name="" class="form-control search-value" data-column-index='0'>
+                                    </div>
+                                    <div class="form-group">
+                                        <span class="control-label">Name</span>
+                                        <input type="text" name="" class="form-control search-value" data-column-index='1'>
+                                    </div>
+                                </form>
+                            </div>
                         </section>
                         <!---Detail--->
-                        <section id="detail">
-                            <h4>Detail</h4>
-                            <div class="row">
-                                <div class="col-lg-3">
-                                    <div class="form-group">
-                                        <label for="" class="control-lable">Name</label>
-                                        <input class="form-control select-value name" type="text" name="name_detail" value="">
+                        <section id="detail" class="card">
+                            <h4 class="card-header">Detail</h4>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="row form-group">
+                                            <div class="col-lg-2">
+                                                <label for="" class="control-lable">Name</label>
+                                            </div>
+                                            <div class="col-lg-10">
+                                                <input class="form-control select-value name" type="text" name="name_detail" value="">
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="form-group">
-                                        <label for="" class="control-lable">Position</label>
-                                        <input class="form-control select-value position" type="text" name="position_detail" value="">
+                                    <div class="col-lg-6">
+                                        <div class="row form-group">
+                                            <div class="col-lg-2">
+                                                <label for="" class="control-lable">Position</label>
+                                            </div>
+                                            <div class="col-lg-10">
+                                                <input class="form-control select-value position" type="text" name="position_detail" value="">
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="form-group">
-                                        <label for="" class="control-lable">Salary</label>
-                                        <input class="form-control select-value salary" type="text" name="salary_detail" value="">
+                                    <div class="col-lg-6">
+                                        <div class="row form-group">
+                                            <div class="col-lg-2">
+                                                <label for="" class="control-lable">Salary</label>
+                                            </div>
+                                            <div class="col-lg-10">
+                                                <input class="form-control select-value salary" type="text" name="salary_detail" value="">
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="form-group">
-                                        <label for="" class="control-lable">Date</label>
-                                        <input class="form-control select-value date" type="text" name="date_detail" value="">
+                                    <div class="col-lg-6">
+                                        <div class="row form-group">
+                                            <div class="col-lg-2">
+                                                <label for="" class="control-lable">Date</label>
+                                            </div>
+                                            <div class="col-lg-10">
+                                                <input class="form-control select-value date" type="text" name="date_detail" value="">
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="form-group">
-                                        <label for="" class="control-lable">Office</label>
-                                        <input class="form-control select-value office" type="text" name="office_detail" value="">
+                                    <div class="col-lg-6">
+                                        <div class="row form-group">
+                                            <div class="col-lg-2">
+                                                <label for="" class="control-lable">Office</label>
+                                            </div>
+                                            <div class="col-lg-10">
+                                                <input class="form-control select-value office" type="text" name="office_detail" value="">
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="form-group">
-                                        <label for="" class="control-lable">Extn</label>
-                                        <input class="form-control select-value extn" type="text" name="extn_detail" value="">
+                                    <div class="col-lg-6">
+                                        <div class="row form-group">
+                                            <div class="col-lg-2">
+                                                <label for="" class="control-lable">Extn</label>
+                                            </div>
+                                            <div class="col-lg-10">
+                                                <input class="form-control select-value extn" type="text" name="extn_detail" value="">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </section>
                         <!----table-result---->
-                        <section id="table-result">
-                            <h4>Table</h4>
-                            <table id="show">
-                                <thead>
-                                    <tr>
-                                        <th>id</th>
-                                        <th>name</th>
-                                        <th>position</th>
-                                        <th>salary</th>
-                                        <th>start_date</th>
-                                        <th>office</th>
-                                        <th>extn</th>
-                                        <th class="last-th">Delete</th>
-                                    </tr>
-                                </thead>
-                            </table>
+                        <section id="table-result" class="card">
+                            <h4 class="card-header">Table</h4>
+                            <div class="card-body">
+                                <table id="show">
+                                    <thead>
+                                        <tr>
+                                            <th>id</th>
+                                            <th>name</th>
+                                            <th>position</th>
+                                            <th>salary</th>
+                                            <th>start_date</th>
+                                            <th>office</th>
+                                            <th>extn</th>
+                                            <th class="last-th">Delete</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
                         </section>
                     </main>
                 </div>
@@ -211,6 +255,11 @@
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
+        $('.button-search').on('click', Search);
+        $('.button-clear').on('click', clear);
+        $('.button-save').on('click', save);
+        $('.button-delete').on('click', Delete);
+
         var show = $('#show').DataTable({
             "order": [
                 [0, 'asc']
@@ -218,16 +267,28 @@
             "paging": false,
             "info": false,
             "columnDefs": [{
-                targets: [2],
-                render: function(data) {
-                    return getPosition(data);
-                }
-            }, {
-                targets: [5],
-                render: function(data) {
-                    return getOffice(data);
+                    targets: [2],
+                    render: function(data) {
+                        return getPosition(data);
+                    }
+                }, {
+                    targets: [5],
+                    render: function(data) {
+                        return getOffice(data);
+                    },
+                }, {
+                    targets: [3, 6],
+                    render: function(data) {
+                        return "<input type='text' class='form-control' value='" + data + "'>";
+                    },
+                }, {
+                    targets: [4],
+                    render: function(data) {
+                        return "<input type='date' class='form-control' value='" + data + "'>";
+                    }
                 },
-            }],
+
+            ],
             data: dataJson.users,
             columns: [{
                 data: 'id'
@@ -245,7 +306,7 @@
                 data: 'extn'
             }, {
                 "render": function() {
-                    return '<button type="submit" class="btn btn-danger button-delete">Xóa</button>'
+                    return '<button type="submit" class="btn btn-danger button-delete">Delete</button>'
                 }
             }]
         });
@@ -278,7 +339,7 @@
             return html;
         };
 
-        $('.button-search').click(function() {
+        function Search() {
             show.search('');
             $('.search-value').each(function() {
                 if (this.value.length > 0) {
@@ -286,16 +347,16 @@
                 }
             });
             show.draw();
-        })
+        };
 
-        $('.button-delete').click(function() {
+        function Delete() {
             show.row($(this).parents('tr')).remove().draw();
-        });
+        }
 
-        $('.button-clear').click(function() {
+        function clear() {
             $('.search-value').val('');
             $('.select-value').val('');
-        });
+        };
 
         $('#show tbody tr').click(function() {
             if ($(this).hasClass('selected')) {
@@ -315,12 +376,8 @@
             }
         });
 
-        $('.button-save').click(function() {
-            console.log(show.data());
-        });
-
-        function show() {
-            alert('go');
+        function save() {
+            console.log(show.rows().data());
         }
     })
 </script>
